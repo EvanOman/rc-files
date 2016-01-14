@@ -17,6 +17,8 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'JuliaLang/julia-vim'
 
+Plugin 'derekwyatt/vim-scala'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
