@@ -52,7 +52,7 @@ set ts=4
 set autoindent
 
 " expand tabs into spaces
-set expandtab
+"set expandtab
 
 " when using the >> or << commands, shift lines by 4 spaces
 set shiftwidth=4
@@ -67,12 +67,19 @@ set showmatch
 let python_highlight_all = 1
 
 
-
-
-:color evening
+syntax enable
+set background=dark
+colorscheme solarized
 
 hi Normal ctermbg=none
 
 highlight NonText ctermbg=none
 
 nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+
+":set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+":set list
+"
+"SPELL CHECK
+set spelllang=en
+set spell
