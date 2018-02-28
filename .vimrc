@@ -57,7 +57,7 @@ set autoindent
 " when using the >> or << commands, shift lines by 4 spaces
 set shiftwidth=4
 
-" show a visual line under the cursor's current line 
+" show a visual line under the cursor's current line
 set cursorline
 
 " show the matching part of the pair for [] {} and ()
@@ -65,7 +65,6 @@ set showmatch
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
-
 
 syntax enable
 set background=dark
@@ -77,8 +76,9 @@ highlight NonText ctermbg=none
 
 nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 
-":set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-":set list
+:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
+:set list
+
 "
 "SPELL CHECK
 set spelllang=en
